@@ -1,0 +1,68 @@
+objc[64362]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x12177eca8) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/GameKitServices.framework/Frameworks/AVConference.framework/AVConference (0x1216b0cd0). One of the two will be used. Which one is undefined.
+objc[64362]: Class PLBuildVersion is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/AssetsLibraryServices.framework/AssetsLibraryServices (0x124063cc0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices (0x123a136f0). One of the two will be used. Which one is undefined.
+2017-12-07 15:24:54.550 BMICalculator[64362:578160] 
+Unhandled Exception:
+System.FormatException: Input string was not in a correct format.
+  at System.Number.ParseSingle (System.String value, System.Globalization.NumberStyles options, System.Globalization.NumberFormatInfo numfmt) [0x00085] in <75fdc35757ef4b00a24457129d1dc3e2>:0 
+  at System.Single.Parse (System.String s, System.Globalization.NumberStyles style, System.Globalization.NumberFormatInfo info) [0x00000] in <75fdc35757ef4b00a24457129d1dc3e2>:0 
+  at System.Single.Parse (System.String s) [0x0000b] in <75fdc35757ef4b00a24457129d1dc3e2>:0 
+  at BMICalculator.ViewController.ButtonCalculate_TouchUpInside (System.Object sender, System.EventArgs e) [0x00022] in <23d378b6986c4ae7b2afe47f3d1a024c>:0 
+  at UIKit.UIControlEventProxy.Activated () [0x00007] in <ef46365b0eaf490385df9fbc37d3de31>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <ef46365b0eaf490385df9fbc37d3de31>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in <ef46365b0eaf490385df9fbc37d3de31>:0 
+  at BMICalculator.Application.Main (System.String[] args) [0x00000] in <23d378b6986c4ae7b2afe47f3d1a024c>:0 
+2017-12-07 15:24:54.551 BMICalculator[64362:578160] Unhandled managed exception:
+Input string was not in a correct format. (System.FormatException)
+  at System.Number.ParseSingle (System.String value, System.Globalization.NumberStyles options, System.Globalization.NumberFormatInfo numfmt) [0x00085] in <75fdc35757ef4b00a24457129d1dc3e2>:0 
+  at System.Single.Parse (System.String s, System.Globalization.NumberStyles style, System.Globalization.NumberFormatInfo info) [0x00000] in <75fdc35757ef4b00a24457129d1dc3e2>:0 
+  at System.Single.Parse (System.String s) [0x0000b] in <75fdc35757ef4b00a24457129d1dc3e2>:0 
+  at BMICalculator.ViewController.ButtonCalculate_TouchUpInside (System.Object sender, System.EventArgs e) [0x00022] in <23d378b6986c4ae7b2afe47f3d1a024c>:0 
+  at UIKit.UIControlEventProxy.Activated () [0x00007] in <ef46365b0eaf490385df9fbc37d3de31>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <ef46365b0eaf490385df9fbc37d3de31>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in <ef46365b0eaf490385df9fbc37d3de31>:0 
+  at BMICalculator.Application.Main (System.String[] args) [0x00000] in <23d378b6986c4ae7b2afe47f3d1a024c>:0 
+2017-12-07 15:24:54.551 BMICalculator[64362:578160] critical: Stacktrace:
+
+2017-12-07 15:24:54.551 BMICalculator[64362:578160] critical: 
+Native stacktrace:
+
+2017-12-07 15:24:54.561 BMICalculator[64362:578160] critical: 	0   BMICalculator                       0x000000010cc99c14 mono_handle_native_crash + 244
+2017-12-07 15:24:54.561 BMICalculator[64362:578160] critical: 	1   libsystem_platform.dylib            0x0000000119250b3a _sigtramp + 26
+2017-12-07 15:24:54.561 BMICalculator[64362:578160] critical: 	2   libsystem_pthread.dylib             0x000000011926e2c8 _pthread_keys + 9720
+2017-12-07 15:24:54.561 BMICalculator[64362:578160] critical: 	3   libsystem_c.dylib                   0x0000000118ee988f abort + 127
+2017-12-07 15:24:54.561 BMICalculator[64362:578160] critical: 	4   BMICalculator                       0x000000010ce32422 xamarin_unhandled_exception_handler + 34
+2017-12-07 15:24:54.561 BMICalculator[64362:578160] critical: 	5   BMICalculator                       0x000000010ccfcad4 mono_invoke_unhandled_exception_hook + 148
+2017-12-07 15:24:54.561 BMICalculator[64362:578160] critical: 	6   BMICalculator                       0x000000010cc99986 mono_handle_exception_internal + 4822
+2017-12-07 15:24:54.562 BMICalculator[64362:578160] critical: 	7   BMICalculator                       0x000000010cc986a8 mono_handle_exception + 24
+2017-12-07 15:24:54.562 BMICalculator[64362:578160] critical: 	8   BMICalculator                       0x000000010cc1c6bf mono_amd64_throw_exception + 143
+2017-12-07 15:24:54.562 BMICalculator[64362:578160] critical: 	9   ???                                 0x000000012b8afae7 0x0 + 5025495783
+2017-12-07 15:24:54.562 BMICalculator[64362:578160] critical: 	10  BMICalculator                       0x000000010cb759fc _ZL31native_to_managed_trampoline_11P11objc_objectP13objc_selectorPP11_MonoMethodj + 284
+2017-12-07 15:24:54.562 BMICalculator[64362:578160] critical: 	11  BMICalculator                       0x000000010cb7f514 -[UIKit_UIControlEventProxy BridgeSelector] + 52
+2017-12-07 15:24:54.563 BMICalculator[64362:578160] critical: 	12  UIKit                               0x000000010e076d82 -[UIApplication sendAction:to:from:forEvent:] + 83
+2017-12-07 15:24:54.563 BMICalculator[64362:578160] critical: 	13  UIKit                               0x000000010e1fb5ac -[UIControl sendAction:to:forEvent:] + 67
+2017-12-07 15:24:54.563 BMICalculator[64362:578160] critical: 	14  UIKit                               0x000000010e1fb8c7 -[UIControl _sendActionsForEvents:withEvent:] + 450
+2017-12-07 15:24:54.563 BMICalculator[64362:578160] critical: 	15  UIKit                               0x000000010e1fa802 -[UIControl touchesEnded:withEvent:] + 618
+2017-12-07 15:24:54.563 BMICalculator[64362:578160] critical: 	16  UIKit                               0x000000010e0e47ea -[UIWindow _sendTouchesForEvent:] + 2707
+2017-12-07 15:24:54.563 BMICalculator[64362:578160] critical: 	17  UIKit                               0x000000010e0e5f00 -[UIWindow sendEvent:] + 4114
+2017-12-07 15:24:54.564 BMICalculator[64362:578160] critical: 	18  UIKit                               0x000000010e092a84 -[UIApplication sendEvent:] + 352
+2017-12-07 15:24:54.564 BMICalculator[64362:578160] critical: 	19  UIKit                               0x000000010e8765d4 __dispatchPreprocessedEventFromEventQueue + 2926
+2017-12-07 15:24:54.564 BMICalculator[64362:578160] critical: 	20  UIKit                               0x000000010e86e532 __handleEventQueue + 1122
+2017-12-07 15:24:54.564 BMICalculator[64362:578160] critical: 	21  CoreFoundation                      0x0000000117b12c01 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+2017-12-07 15:24:54.564 BMICalculator[64362:578160] critical: 	22  CoreFoundation                      0x0000000117af80cf __CFRunLoopDoSources0 + 527
+2017-12-07 15:24:54.564 BMICalculator[64362:578160] critical: 	23  CoreFoundation                      0x0000000117af75ff __CFRunLoopRun + 911
+2017-12-07 15:24:54.564 BMICalculator[64362:578160] critical: 	24  CoreFoundation                      0x0000000117af7016 CFRunLoopRunSpecific + 406
+2017-12-07 15:24:54.564 BMICalculator[64362:578160] critical: 	25  GraphicsServices                    0x00000001196b2a24 GSEventRunModal + 62
+2017-12-07 15:24:54.564 BMICalculator[64362:578160] critical: 	26  UIKit                               0x000000010e075134 UIApplicationMain + 159
+2017-12-07 15:24:54.565 BMICalculator[64362:578160] critical: 	27  ???                                 0x000000012b966530 0x0 + 5026243888
+2017-12-07 15:24:54.565 BMICalculator[64362:578160] critical: 	28  ???                                 0x000000012b966390 0x0 + 5026243472
+2017-12-07 15:24:54.565 BMICalculator[64362:578160] critical: 
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
