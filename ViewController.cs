@@ -41,10 +41,14 @@ namespace BMICalculator
 			{
 				labelResult.TextColor = UIColor.Red;
 			}
-			else
+			else if(result <= 18.5)
 			{
-				labelResult.TextColor = UIColor.Green;
+                labelResult.TextColor = UIColor.Orange;
 			}
+            else
+            {
+                labelResult.TextColor = UIColor.Green;
+            }
 
 			labelResult.Text = result.ToString();
 		}
