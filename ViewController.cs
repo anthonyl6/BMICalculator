@@ -9,7 +9,6 @@ namespace BMICalculator
 		float num1;
 		float num2;
 		float result;
-		float calculate;
 		float squared;
 
 		protected ViewController(IntPtr handle) : base(handle)

@@ -4,9 +4,9 @@ using UIKit;
 
 namespace BMICalculator
 {
-    public partial class DetailsViewController.cs : UITableViewCell
+    public partial class DetailsViewControllercs : UITableViewCell
     {
-        public DetailsViewController.cs (IntPtr handle) : base (handle)
+        public DetailsViewControllercs (IntPtr handle) : base (handle)
         {
         }
     }
