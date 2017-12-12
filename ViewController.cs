@@ -58,9 +58,15 @@ namespace BMICalculator
 			// Release any cached data, images, etc that aren't in use.
 		}
 
-        public override void PerformSegue(string identifier, Foundation.NSObject sender)
+        public override void PrepareForSegue(UIStoryboardSegue segue, Foundation.NSObject sender)
         {
-            base.PerformSegue(identifier, sender);
+            base.PrepareForSegue(segue, sender);
+
+			var detailsViewControllerResult = segue.DestinationViewController as detailsViewControllerResult;
+
+			detailsViewControllerResult.num1 = this.num1;
+			detailsViewControllerResult.num2 = this.num2;
+			detailsViewControllerResult.result = this.result;
         }
 	}
 }
