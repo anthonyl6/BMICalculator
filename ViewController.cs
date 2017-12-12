@@ -57,6 +57,11 @@ namespace BMICalculator
 			base.DidReceiveMemoryWarning();
 			// Release any cached data, images, etc that aren't in use.
 		}
+
+        public override void PerformSegue(string identifier, Foundation.NSObject sender)
+        {
+            base.PerformSegue(identifier, sender);
+        }
 	}
 }
 

@@ -104,9 +104,9 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailsViewController_.cs" />
-    <Compile Include="DetailsViewController_.designer.cs">
-      <DependentUpon>DetailsViewController_.cs</DependentUpon>
+    <Compile Include="detailsViewControllerResult.cs" />
+    <Compile Include="detailsViewControllerResult.designer.cs">
+      <DependentUpon>detailsViewControllerResult.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
